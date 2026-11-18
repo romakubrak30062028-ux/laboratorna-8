@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зерно — кав’ярня у Вінниці</title>
+    <meta name="description" content="Кав’ярня «Зерно» у центрі Вінниці: спешелті кава, свіжа випічка, сніданки та затишний простір для навчання.">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Шрифти -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+    <!-- ================= НАВІГАЦІЯ ================= -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top nav-zerno">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <i class="bi bi-cup-hot-fill fs-3 text-accent"></i><span class="brand-name">Зерно</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas"
+                    aria-controls="menuOffcanvas" aria-label="Відкрити меню">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="menuLabel">Зерно</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Закрити"></button>
+                </div>
+                <div class="offcanvas-body align-items-lg-center">
+                    <ul class="navbar-nav ms-auto me-lg-3">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Про нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Меню</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Відгуки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
+                    </ul>
+                    <a href="#booking" class="btn btn-accent rounded-pill px-4 mt-3 mt-lg-0">Забронювати столик</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <header id="home" class="hero d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-7 text-center text-lg-start">
+                    <span class="badge rounded-pill bg-accent-soft text-uppercase mb-3 px-3 py-2">Спешелті кава у Вінниці</span>
+                    <h1 class="display-3 fw-bold mb-4 font-serif">Кава, з якої починається гарний день</h1>
+                    <p class="lead mb-4 text-white-75">Обсмажуємо зерно щотижня, печемо круасани щоранку і створили простір, де зручно працювати, навчатися та зустрічатися з друзями.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#menu" class="btn btn-accent btn-lg rounded-pill px-4">Переглянути меню</a>
+                        <a href="#booking" class="btn btn-outline-light btn-lg rounded-pill px-4">Забронювати столик</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-none d-lg-block">
+                    <div class="hero-card shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=700&q=75" class="img-fluid rounded-4" alt="Лате з латте-артом">
+                        <div class="hero-card-note bg-white text-dark rounded-4 shadow p-3">
+                            <i class="bi bi-star-fill text-warning"></i> <strong>4.9</strong> — 620 відгуків у Google
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= ПЕРЕВАГИ ================= -->
+    <section class="py-5 bg-cream">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center">
+                <div class="col"><div class="feature p-4 h-100 rounded-4 bg-white shadow-sm"><i class="bi bi-fire fs-1 text-accent"></i><h3 class="h5 mt-3">Власна обсмажка</h3><p class="text-secondary mb-0">Зерно з Ефіопії, Колумбії та Бразилії обсмажуємо щотижня.</p></div></div>
+                <div class="col"><div class="feature p-4 h-100 rounded-4 bg-white shadow-sm"><i class="bi bi-basket fs-1 text-accent"></i><h3 class="h5 mt-3">Свіжа випічка</h3><p class="text-secondary mb-0">Круасани, сирники та чизкейки готуємо зранку на місці.</p></div></div>
+                <div class="col"><div class="feature p-4 h-100 rounded-4 bg-white shadow-sm"><i class="bi bi-wifi fs-1 text-accent"></i><h3 class="h5 mt-3">Зона для навчання</h3><p class="text-secondary mb-0">Швидкий Wi-Fi, розетки біля кожного столу та тиха зала.</p></div></div>
+                <div class="col"><div class="feature p-4 h-100 rounded-4 bg-white shadow-sm"><i class="bi bi-lightning-charge fs-1 text-accent"></i><h3 class="h5 mt-3">Працюємо без світла</h3><p class="text-secondary mb-0">Генератор і газова плита — кава буде завжди.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ПРО НАС ================= -->
+    <section id="about" class="py-5">
+        <div class="container py-lg-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-7"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=75" class="img-fluid rounded-4 shadow-sm about-img-tall" alt="Інтер’єр кав’ярні"></div>
+                        <div class="col-5 d-flex flex-column gap-3">
+                            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=75" class="img-fluid rounded-4 shadow-sm" alt="Бариста готує каву">
+                            <div class="rounded-4 bg-accent text-white p-3 text-center">
+                                <span class="d-block display-6 fw-bold">5</span><small class="text-uppercase">років з вами</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p class="text-accent fw-bold text-uppercase mb-2">Про нас</p>
+                    <h2 class="display-6 fw-bold font-serif mb-4">Маленька кав’ярня з великою любов’ю до кави</h2>
+                    <p class="text-secondary">«Зерно» відкрилося у 2021 році на тихій вулиці біля Європейської площі. Ми почали з однієї кавомашини та шести столиків, а сьогодні маємо власну обсмажку і команду з дванадцяти бариста.</p>
+                    <p class="text-secondary mb-4">Нам важливо, щоб кожен гість почувався як удома: тут можна спокійно попрацювати з ноутбуком, підготуватися до пари чи просто поговорити з другом за чашкою фільтр-кави.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Сертифіковані бариста SCA</li>
+                        <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i>Рослинне молоко без доплати</li>
+                        <li><i class="bi bi-check2-circle text-accent me-2"></i>Знижка 10% для студентів</li>
+                    </ul>
+                    <a href="#menu" class="btn btn-dark rounded-pill px-4">До меню</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= МЕНЮ ================= -->
+    <section id="menu" class="py-5 bg-cream">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <p class="text-accent fw-bold text-uppercase mb-2">Меню</p>
+                <h2 class="display-6 fw-bold font-serif">Що у нас смачного</h2>
+            </div>
+            <ul class="nav nav-pills justify-content-center mb-4 gap-2 menu-tabs" role="tablist">
+                <li class="nav-item" role="presentation"><button class="nav-link active rounded-pill" data-bs-toggle="pill" data-bs-target="#tab-coffee" type="button" role="tab">Кава</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#tab-other" type="button" role="tab">Не кава</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#tab-food" type="button" role="tab">Їжа</button></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-coffee" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Еспресо"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Еспресо</h3><span class="price">55 ₴</span></div><p class="card-text text-secondary">Насичений шот з нотами шоколаду та горіхів.</p></div></div></div>
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Капучино"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Капучино</h3><span class="price">75 ₴</span></div><p class="card-text text-secondary">Еспресо з ніжною молочною піною, 250 мл.</p></div></div></div>
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Фільтр-кава"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Фільтр-кава</h3><span class="price">70 ₴</span></div><p class="card-text text-secondary">Ефіопія Іргачефе: ягоди, жасмин, легка кислинка.</p></div></div></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-other" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Какао"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Какао з маршмелоу</h3><span class="price">80 ₴</span></div><p class="card-text text-secondary">Бельгійський шоколад, молоко та зефір.</p></div></div></div>
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Чай"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Обліпиховий чай</h3><span class="price">65 ₴</span></div><p class="card-text text-secondary">Обліпиха, мед, імбир та апельсин.</p></div></div></div>
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Матча"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Матча-лате</h3><span class="price">95 ₴</span></div><p class="card-text text-secondary">Японський зелений чай з вівсяним молоком.</p></div></div></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-food" role="tabpanel">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Сніданок"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Сніданок «Зерно»</h3><span class="price">165 ₴</span></div><p class="card-text text-secondary">Яйця пашот, авокадо, тост і салат.</p></div></div></div>
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Гранола"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Гранола з ягодами</h3><span class="price">110 ₴</span></div><p class="card-text text-secondary">Йогурт, домашня гранола та сезонні ягоди.</p></div></div></div>
+                        <div class="col"><div class="card menu-card h-100 border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=75" class="card-img-top" alt="Десерт"><div class="card-body"><div class="d-flex justify-content-between"><h3 class="h5 card-title">Донат дня</h3><span class="price">60 ₴</span></div><p class="card-text text-secondary">Щодня новий смак — питайте у бариста.</p></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ГАЛЕРЕЯ (КАРУСЕЛЬ) ================= -->
+    <section id="gallery" class="py-5">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <p class="text-accent fw-bold text-uppercase mb-2">Галерея</p>
+                <h2 class="display-6 fw-bold font-serif">Атмосфера «Зерна»</h2>
+            </div>
+            <div id="galleryCarousel" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=75" class="d-block w-100 gallery-img" alt="Зала кав’ярні"><div class="carousel-caption d-none d-md-block"><h3 class="h5">Світла зала на 40 місць</h3></div></div>
+                    <div class="carousel-item"><img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=1400&q=75" class="d-block w-100 gallery-img" alt="Барна стійка"><div class="carousel-caption d-none d-md-block"><h3 class="h5">Барна стійка та обсмажка</h3></div></div>
+                    <div class="carousel-item"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1400&q=75" class="d-block w-100 gallery-img" alt="Тераса"><div class="carousel-caption d-none d-md-block"><h3 class="h5">Літня тераса</h3></div></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Назад</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Далі</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ВІДГУКИ ================= -->
+    <section id="reviews" class="py-5 bg-dark text-white">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <p class="text-accent fw-bold text-uppercase mb-2">Відгуки</p>
+                <h2 class="display-6 fw-bold font-serif">Що кажуть гості</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col"><figure class="review p-4 rounded-4 h-100 mb-0"><blockquote class="mb-3">«Найкращий флет-вайт у місті, а круасани ще теплі зранку. Тепер це моє місце для навчання.»</blockquote><figcaption class="d-flex align-items-center gap-3"><span class="avatar">О</span><span>Олена, студентка</span></figcaption></figure></div>
+                <div class="col"><figure class="review p-4 rounded-4 h-100 mb-0"><blockquote class="mb-3">«Працюю віддалено і щодня приходжу сюди з ноутбуком. Тихо, швидкий інтернет і привітні бариста.»</blockquote><figcaption class="d-flex align-items-center gap-3"><span class="avatar">А</span><span>Андрій, розробник</span></figcaption></figure></div>
+                <div class="col"><figure class="review p-4 rounded-4 h-100 mb-0"><blockquote class="mb-3">«Святкували тут день народження доньки — забронювали столик за 5 хвилин через сайт.»</blockquote><figcaption class="d-flex align-items-center gap-3"><span class="avatar">М</span><span>Марина, гостя</span></figcaption></figure></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= БРОНЮВАННЯ ================= -->
+    <section id="booking" class="py-5 bg-cream">
+        <div class="container py-lg-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-12 col-lg-5">
+                    <p class="text-accent fw-bold text-uppercase mb-2">Бронювання</p>
+                    <h2 class="display-6 fw-bold font-serif mb-3">Забронюйте столик</h2>
+                    <p class="text-secondary">Залиште заявку, і ми підтвердимо бронювання дзвінком протягом 15 хвилин. Для компаній від 8 людей готуємо окремий стіл.</p>
+                    <div class="accordion mt-4" id="faq">
+                        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">Чи можна прийти з собакою?</button></h3><div id="q1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Так, ми pet-friendly, а для хвостатих гостей є миска з водою.</div></div></div>
+                        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Чи є знижка для студентів?</button></h3><div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Так, 10% на всі напої за студентським квитком.</div></div></div>
+                        <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">Чи працюєте під час відключень?</button></h3><div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Так, у нас є генератор та Starlink.</div></div></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <form id="bookingForm" class="booking-form bg-white rounded-4 shadow-sm p-4 p-md-5" novalidate>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6"><label for="name" class="form-label">Ім’я</label><input type="text" class="form-control" id="name" required placeholder="Ваше ім’я"><div class="invalid-feedback">Вкажіть ім’я</div></div>
+                            <div class="col-12 col-md-6"><label for="phone" class="form-label">Телефон</label><input type="tel" class="form-control" id="phone" required pattern="[0-9+()\s-]{10,}" placeholder="+38 (0__) ___-__-__"><div class="invalid-feedback">Вкажіть коректний телефон</div></div>
+                            <div class="col-12 col-md-6"><label for="date" class="form-label">Дата</label><input type="date" class="form-control" id="date" required><div class="invalid-feedback">Оберіть дату</div></div>
+                            <div class="col-12 col-md-6"><label for="guests" class="form-label">Кількість гостей</label><select id="guests" class="form-select" required><option value="">Оберіть...</option><option>1–2</option><option>3–4</option><option>5–8</option><option>8+</option></select><div class="invalid-feedback">Оберіть кількість гостей</div></div>
+                            <div class="col-12"><label for="comment" class="form-label">Коментар</label><textarea id="comment" class="form-control" rows="3" placeholder="Побажання до столика"></textarea></div>
+                            <div class="col-12"><button type="submit" class="btn btn-accent btn-lg rounded-pill w-100">Надіслати заявку</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= КОНТАКТИ / ФУТЕР ================= -->
+    <footer id="contacts" class="footer-zerno text-white pt-5">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3" href="#home"><i class="bi bi-cup-hot-fill fs-3 text-accent"></i><span class="brand-name fs-4">Зерно</span></a>
+                    <p class="text-white-50">Кав’ярня спешелті кави та свіжої випічки в центрі Вінниці.</p>
+                    <div class="d-flex gap-3 fs-5"><a href="#" class="text-white-50" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" class="text-white-50" aria-label="Telegram"><i class="bi bi-telegram"></i></a><a href="#" class="text-white-50" aria-label="Facebook"><i class="bi bi-facebook"></i></a></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="h5 mb-3">Контакти</h3>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2 text-accent"></i>Вінниця, вул. Пирогова, 12</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2 text-accent"></i><a class="text-white-50 text-decoration-none" href="tel:+380931112233">+38 (093) 111-22-33</a></li>
+                        <li><i class="bi bi-envelope me-2 text-accent"></i>hello@zerno.coffee</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3 class="h5 mb-3">Графік роботи</h3>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="d-flex justify-content-between border-bottom border-secondary py-2"><span>Пн – Пт</span><span>07:30 – 21:00</span></li>
+                        <li class="d-flex justify-content-between border-bottom border-secondary py-2"><span>Сб – Нд</span><span>09:00 – 22:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary py-3 text-center text-white-50 small">
+                &copy; <span id="year">2026</span> Кав’ярня «Зерно». Сайт розробив Роман Кубрак, 3-ОК-2, ВСП «ВіФК НУХТ».
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка «Нагору» -->
+    <a href="#home" class="btn btn-accent rounded-circle back-to-top shadow" aria-label="Нагору"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Toast про успішну заявку -->
+    <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+        <div id="bookingToast" class="toast text-bg-success" role="alert" aria-live="polite">
+            <div class="d-flex"><div class="toast-body">Дякуємо! Ми зателефонуємо вам найближчим часом.</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрити"></button></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

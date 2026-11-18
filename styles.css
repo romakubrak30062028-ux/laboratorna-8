@@ -1,0 +1,80 @@
+/* Кав'ярня «Зерно» — власні стилі поверх Bootstrap 5 */
+:root {
+    --accent: #c8773b;
+    --accent-dark: #a65f2b;
+    --cream: #faf5ef;
+    --coffee: #2b1d16;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; color: #2f2a26; }
+section, header { scroll-margin-top: 70px; }
+.font-serif, .brand-name { font-family: 'Playfair Display', serif; }
+.brand-name { font-weight: 700; font-size: 1.6rem; letter-spacing: .5px; }
+
+.text-accent { color: var(--accent) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.bg-accent-soft { background-color: rgba(200, 119, 59, .25); color: #ffd9bd; }
+.bg-cream { background-color: var(--cream); }
+.text-white-75 { color: rgba(255, 255, 255, .8); }
+
+.btn-accent { background-color: var(--accent); color: #fff; border: none; }
+.btn-accent:hover, .btn-accent:focus { background-color: var(--accent-dark); color: #fff; }
+
+/* Навігація */
+.nav-zerno { background-color: rgba(43, 29, 22, .55); backdrop-filter: blur(6px); transition: background-color .3s ease, padding .3s ease; }
+.nav-zerno.scrolled { background-color: var(--coffee); padding-top: .4rem; padding-bottom: .4rem; box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2); }
+.nav-zerno .nav-link { font-weight: 500; }
+.nav-zerno .nav-link.active, .nav-zerno .nav-link:hover { color: var(--accent) !important; }
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    padding: 120px 0 80px;
+    background: linear-gradient(110deg, rgba(43, 29, 22, .92) 0%, rgba(43, 29, 22, .7) 55%, rgba(43, 29, 22, .45) 100%),
+                url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=75') center / cover no-repeat;
+}
+.hero-card { position: relative; }
+.hero-card-note { position: absolute; left: -30px; bottom: 30px; font-size: .95rem; }
+
+/* Блоки */
+.feature { transition: transform .3s ease, box-shadow .3s ease; }
+.feature:hover { transform: translateY(-6px); box-shadow: 0 1rem 2rem rgba(43, 29, 22, .12) !important; }
+.about-img-tall { height: 100%; object-fit: cover; }
+
+/* Меню */
+.menu-tabs .nav-link { color: var(--coffee); border: 1px solid #e3d5c6; padding: .5rem 1.5rem; }
+.menu-tabs .nav-link.active { background-color: var(--coffee); border-color: var(--coffee); }
+.menu-card img { height: 220px; object-fit: cover; }
+.menu-card .price { color: var(--accent); font-weight: 700; }
+
+/* Галерея */
+.gallery-img { height: 480px; object-fit: cover; }
+
+/* Відгуки */
+.review { background-color: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .1); }
+.avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
+
+/* Акордеон */
+.accordion-button:not(.collapsed) { background-color: #f3e6d9; color: var(--coffee); }
+.accordion-button:focus { box-shadow: 0 0 0 .2rem rgba(200, 119, 59, .25); }
+
+/* Футер */
+.footer-zerno { background-color: var(--coffee); }
+
+/* Кнопка нагору */
+.back-to-top { position: fixed; right: 20px; bottom: 20px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity .3s ease; z-index: 1030; }
+.back-to-top.show { opacity: 1; visibility: visible; }
+
+/* Планшет */
+@media (max-width: 991.98px) {
+    .hero { text-align: center; }
+    .gallery-img { height: 360px; }
+}
+
+/* Телефон */
+@media (max-width: 575.98px) {
+    .hero h1 { font-size: 2.3rem; }
+    .gallery-img { height: 240px; }
+    .menu-card img { height: 180px; }
+}
